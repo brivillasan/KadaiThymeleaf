@@ -5,9 +5,10 @@
 <title>Thymeleaf課題</title>
 </head>
 <body>
-    <h1>入力画面</h1>
+    <h1 th:text="#{content.title}"></h1>
+    <h2 th:text="#{content.nyuryokugamen}"></h2>
     <p th:text="'入力された値は「' + ${previous} + '」です。'"></p>
-    <p><a th:href="@{/input/{aid}(previous=${previous})}">入力画面へ戻る</a></p>
+    <p ><a th:href="@{/input/(previous=${previous})}" th:text="#{content.modoru}"></a></p>
 
 </body>
 </html>
