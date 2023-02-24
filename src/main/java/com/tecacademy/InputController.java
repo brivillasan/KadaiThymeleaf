@@ -17,7 +17,7 @@ public class InputController {
     }
 
 
-    @GetMapping("/input")
+    @GetMapping("/input/{previous}")
     public String getPrevious(@RequestParam("previous") String previous, Model model) {
         // input.htmlに画面遷移
         model.addAttribute("previous", previous);
