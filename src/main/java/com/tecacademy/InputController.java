@@ -19,6 +19,6 @@ public class InputController {
     public String getPrevious(@PathVariable String previous, Model model) {
         // input.htmlに画面遷移
 
-        return previous;
+        return "input";
     }
 }
